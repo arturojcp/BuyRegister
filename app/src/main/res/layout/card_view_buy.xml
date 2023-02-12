@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="12dp"
+    card_view:cardBackgroundColor="#A1887F"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgBuyer"
+            android:src="@drawable/ic_registro"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvNameC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgBuyer"
+            android:layout_toRightOf="@id/imgBuyer"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgBuyer"
+            android:layout_toRightOf="@id/imgBuyer"
+            android:layout_below="@id/tvNameC"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgBuyer"
+            android:layout_toRightOf="@id/imgBuyer"
+            android:layout_below="@id/tvQuantity"
+            android:textSize="20sp"/>
+
+
+        <Button
+            android:id="@+id/btnDeleteC"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/imgBuyer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/btndeletetest"
+            android:text="Borrar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+           />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
